@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import { Bookmark, Play } from "lucide-react";
-import HeroBg from "../assets/herobg2.jpg";
+import { Play } from "lucide-react";
+// import HeroBg from "../assets/herobg2.jpg";
 import { Link } from "react-router";
 
 import type { Movie, UpcomingMoviesResponse } from "../types";

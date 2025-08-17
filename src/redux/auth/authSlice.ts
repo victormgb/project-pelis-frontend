@@ -1,4 +1,4 @@
-import { createSlice, createAsyncThunk, combineReducers, type PayloadAction } from '@reduxjs/toolkit';
+import { createSlice, createAsyncThunk, type PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 import type { RootState } from '../store';
 
@@ -170,7 +170,7 @@ const authSlice = createSlice({
         state.user = action.payload;
         state.error = null;
       })
-      .addCase(fetchUser.rejected, (state, action: PayloadAction<string | null | undefined>) => {
+      .addCase(fetchUser.rejected, (state) => {
         state.fetchingUser = false;
         state.user = null; // Always clear user if fetch fails
       })

@@ -1,5 +1,4 @@
-import { HelpCircle, LogOut, Search, Settings } from "lucide-react";
-import Logo from "../assets/logo.png";
+import { LogOut } from "lucide-react";
 import { Link } from "react-router";
 // import { useAuthStore } from "../store/authStore";
 import { useState } from "react";

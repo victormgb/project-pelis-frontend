@@ -1,8 +1,8 @@
 import { Play } from "lucide-react";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 
-import type { Movie, MovieVideoResponse, UpcomingMoviesResponse } from "../types";
+import type { Movie, MovieVideoResponse } from "../types";
 
 const Moviepage = () => {
   const { id } = useParams();
